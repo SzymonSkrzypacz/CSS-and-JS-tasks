@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*<div class="item1">Ekran ma do 359px i kolor tła czerwony</div>*/
+
+body {
+    background-color: red;
+}
+
+div {
+    font-size: 40px;
+    color: white;
+}
+
+.item1 {
+    display: block;
+}
+
+.item2 {
+    display: none;
+}
+
+.item3 {
+    display: none;
+}
+
+.item4 {
+    display: none;
+}
+
+.item5 {
+    display: none;
+}
+
+
+/*<div class="item2">Ekran ma między 360px a 639px i kolor tła zielony</div>*/
+
+@media(min-width: 360px) {
+    body {
+        background-color: green;
+    }
+    .item1 {
+        display: none;
+    }
+    .item2 {
+        display: block;
+    }
+}
+
+
+/*<div class="item3">Ekran ma od 640px do 1023px i kolor tła niebieski</div>*/
+
+@media(min-width: 640px) {
+    body {
+        background-color: blue;
+    }
+    .item2 {
+        display: none;
+    }
+    .item3 {
+        display: block;
+    }
+}
+
+
+/*<div class="item4">Ekran ma od 1024px do 1400px i kolor tła szary</div>*/
+
+@media(min-width: 1024px) {
+    body {
+        background-color: gray;
+    }
+    .item3 {
+        display: none;
+    }
+    .item4 {
+        display: block;
+    }
+}
+
+
+/*<div class="item5">Ekran ma co najmnie 1400px i border niebieski 10pxna body</div>*/
+
+@media(min-width: 1350px) {
+   
+    .item4 {
+        display: none;
+    }
+    .item5 {
+        display: block;
+        border: 10px blue solid;
+    }
+}
