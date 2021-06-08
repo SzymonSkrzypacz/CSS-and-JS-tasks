@@ -42,8 +42,6 @@
                 transform: rotate(0);
             }
 
-
-
             100% {
                 width: 100px;
                 height: 100px;
@@ -65,30 +63,17 @@
 
         function createDiv() {
             const divItem = document.createElement("div");
-
-            //divItem.className = "box";
-
             divItem.classList.add("box");
-
-            // divItem.setAttribute("class", "box");
-
-
             document.body.appendChild(divItem);
 
         }
         buttonJS.addEventListener("click", createDiv);
     </script>
-
-
     <script>
         $('.jq').on('click', function () {
-
             $("body").append('<div class="box">')
 
         })
     </script>
-
-
 </body>
-
 </html>
